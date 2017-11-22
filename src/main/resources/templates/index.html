@@ -13,6 +13,17 @@
 			<h1><a href="@{/}">Countries of the World</a></h1>
 		</div>
 	</header>
+
+    <div class="container">
+        <div class="dropdown">
+            <button class="dropbtn">Sort</button>
+            <div class="dropdown-content">
+                <a th:href="@{'/sort-by-name'}">By Name</a>
+                <a th:href="@{'/sort-by-population'}">By Population</a>
+            </div>
+        </div>
+    </div>
+
 	<div class="container">
 		<div class="country" th:each="country : ${countries}">
 			<a th:href="@{'/countries/' + ${country.name}}">

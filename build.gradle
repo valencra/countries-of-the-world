@@ -21,5 +21,6 @@ repositories {
 
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    compile 'uk.com.robust-it:cloning:1.9.6'
     runtime 'net.sourceforge.nekohtml:nekohtml:1.9.22'
 }
